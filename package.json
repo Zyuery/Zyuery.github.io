@@ -69,6 +69,14 @@
       "body-max-line-length": [
         0,
         "always"
+      ],
+      "subject-empty": [
+        0,
+        "never"
+      ],
+      "type-empty": [
+        0,
+        "never"
       ]
     }
   },
