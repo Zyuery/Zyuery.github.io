@@ -17,7 +17,7 @@ timezone: Asia/Shanghai
 
 title: Zlog # the main title
 
-tagline: zyuer's blogs # it will display as the subtitle
+tagline: by zyuer # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   zyuer's blogs
