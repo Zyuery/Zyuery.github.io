@@ -88,8 +88,11 @@ class Theme {
     });
 
     if (!this.#hasMode) {
+      console.log('[Theme] 无存储，默认 dark');
       this.#setDark(); // default to dark mode
       return;
+    }else{
+      console.log('[Theme] 有存储，使用存储的 mode');
     }
 
     if (this.#isDarkMode) {
@@ -103,10 +106,10 @@ class Theme {
    * Flips the current theme mode
    */
   static flip() {
-    if (this.#hasMode) {
-      this.#clearMode();
+    if (this.#isDarkMode) {
+      this.#setLight();
     } else {
-      this.#sysDark ? this.#setLight() : this.#setDark();
+      this.#setDark();
     }
     this.#notify();
   }
