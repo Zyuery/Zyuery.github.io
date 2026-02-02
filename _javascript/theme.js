@@ -88,6 +88,7 @@ class Theme {
     });
 
     if (!this.#hasMode) {
+      this.#setDark(); // default to dark mode
       return;
     }
 
