@@ -88,11 +88,11 @@ class Theme {
     });
 
     if (!this.#hasMode) {
-      console.log('[Theme] 无存储，默认 dark');
-      this.#setDark(); // default to dark mode
+      // console.log('[Theme] 无存储，默认 dark');
+      // this.#setDark(); // default to dark mode
       return;
     }else{
-      console.log('[Theme] 有存储，使用存储的 mode');
+      // console.log('[Theme] 有存储，使用存储的 mode');
     }
 
     if (this.#isDarkMode) {
